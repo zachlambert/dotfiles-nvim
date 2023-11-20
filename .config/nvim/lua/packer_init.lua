@@ -82,6 +82,7 @@ return packer.startup(function(use)
     'glepnir/zephyr-nvim',
     requires = { 'nvim-treesitter/nvim-treesitter', opt = true },
   })
+  use 'EdenEast/nightfox.nvim'
 
   -- LSP
   use 'neovim/nvim-lspconfig'

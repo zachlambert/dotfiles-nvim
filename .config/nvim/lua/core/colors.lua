@@ -6,7 +6,7 @@
 -- }
 -- require('onedark').load()
 
-require("monokai").setup{}
+-- require("monokai").setup{}
 
 -- require("rose-pine").setup {
 --   dark_variant = 'main'
@@ -14,6 +14,13 @@ require("monokai").setup{}
 -- vim.cmd("colorscheme rose-pine")
 
 -- require('zephyr')
+
+require("nightfox").setup({
+  options = {
+    transparent = true,
+  }
+})
+vim.cmd("colorscheme nightfox")
 
 local M = {}
 
