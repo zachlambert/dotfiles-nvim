@@ -45,6 +45,9 @@ return packer.startup(function(use)
   -- Add your plugins here:
   use 'wbthomason/packer.nvim' -- packer can manage itself
 
+  -- Icons
+  use 'kyazdani42/nvim-web-devicons'
+
   -- File explorer
   use 'kyazdani42/nvim-tree.lua'
 
@@ -52,7 +55,7 @@ return packer.startup(function(use)
   use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
 
   -- Indent line
-  use 'lukas-reineke/indent-blankline.nvim'
+  -- use 'lukas-reineke/indent-blankline.nvim'
 
   -- Autopair
   use {
@@ -61,9 +64,6 @@ return packer.startup(function(use)
       require('nvim-autopairs').setup{}
     end
   }
-
-  -- Icons
-  use 'kyazdani42/nvim-web-devicons'
 
   -- Tag viewer
   use 'preservim/tagbar'
@@ -131,6 +131,11 @@ return packer.startup(function(use)
   use {
     "kien/ctrlp.vim"
   }
+
+  use ({
+    "kmontocam/nvim-conda",
+    requires = { "nvim-lua/plenary.nvim" },
+  })
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
