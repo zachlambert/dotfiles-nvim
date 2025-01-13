@@ -79,7 +79,7 @@ lspconfig = require("lspconfig");
 -- map buffer local keybindings when the language server attaches.
 -- Add your language server below:
 
-local servers = { 'bashls', 'pyright', 'clangd', 'html', 'cssls', 'tsserver', 'texlab' }
+local servers = { 'bashls', 'pyright', 'clangd', 'html', 'cssls', 'ts_ls', 'texlab' }
 
 -- Call setup
 for _, lsp in ipairs(servers) do

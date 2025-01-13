@@ -87,10 +87,12 @@ return packer.startup(function(use)
   -- LSP
   use 'neovim/nvim-lspconfig'
   use 'simrat39/rust-tools.nvim'
-
   use 'nvim-lua/popup.nvim'
-
   use 'lervag/vimtex'
+
+  -- Mason: handles installing language servers
+  use 'williamboman/mason.nvim'
+  use 'williamboman/mason-lspconfig.nvim'
 
   -- Autocomplete
   use {
@@ -130,6 +132,11 @@ return packer.startup(function(use)
   -- Ctrlp
   use {
     "kien/ctrlp.vim"
+  }
+
+  -- Working with remote containers
+  use {
+    "jamestthompson3/nvim-remote-containers"
   }
 
   -- Automatically set up your configuration after cloning packer.nvim
